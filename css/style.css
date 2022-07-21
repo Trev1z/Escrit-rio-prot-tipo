@@ -3,20 +3,25 @@
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
-header {
-	background-color: black;
-}
-.hero{
-	height: 100vh;
-	width: 100%;
-	
-	background-size: cover;
-	background-position:center;
-}
-.master {
+.cabecalho{
 	background-color: white;
+}
+
+.cabecalho-imagem {
+	height: 100px;
+}
+
+.cabecalho-principal{
+	border-top: 0.4px;
+	height: 100vh;
+	
+}
+.principal {
+	border-top: 0.4px solid #000;
+	color:black;
 }
 nav{
 	display: flex;
@@ -27,7 +32,7 @@ nav{
 	padding-right: 8%;
 }
 .logo{
-	color: white;
+	color: black;
 	font-size: 35px;
 	letter-spacing: 1px;
 	cursor: pointer;
@@ -41,13 +46,13 @@ nav ul li{
 	padding: 10px  25px;
 }
 nav ul li a{
-	color: white;
+	color: #f9004d;
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
 }
 nav ul li a:hover{
-	color: #25D366;
+	color: #ce0243;
 	transition: .4s;
 }
 .btn{
@@ -62,7 +67,11 @@ nav ul li a:hover{
 }
 .btn:hover{
 	transform: scale(1.2);
+
 }
+
+
+
 .content{
 	position: absolute;
 	top: 50%;
@@ -70,17 +79,17 @@ nav ul li a:hover{
 	transform: translateY(-50%);
 }
 h1{
-	color: white;
+	color: black;
 	margin: 20px 0px 20px;
 	font-size: 75px;
 }
 h3{
-	color: white;
+	color: black;
 	font-size: 25px;
 	margin-bottom: 50px;
 }
 h4{
-	color: white;
+	color: black;
 	letter-spacing: 2px;
 	font-size: 20px;
 }
@@ -111,10 +120,11 @@ h4{
 	right: 6px; 
 }
 
+/*Sobre o escritório*/
 .about{
 	width: 100%;
 	padding: 100px 0px;
-	background-color: #191919;
+	background-color: #d3d3d3;
 }
 .about img{
 	height: auto;
@@ -132,7 +142,7 @@ h4{
 	justify-content: space-around;
 }
 .about-text h2{
-	color: white;
+	color: #f9004d;
 	font-size: 75px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
