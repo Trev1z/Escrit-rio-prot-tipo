@@ -1,27 +1,26 @@
+/*--------------Geral---------------*/
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'josefin Sans', sans-serif;
 	box-sizing: border-box;
 	text-decoration: none;
 }
 
+/*--------------cabecalho-----------------*/
 .cabecalho{
-	background-color: white;
+	background: linear-gradient(#FFFFFF, #D7E1EC)
+	;
 }
 
 .cabecalho-imagem {
-	height: 100px;
+	height: 50px;
 }
 
 .cabecalho-principal{
 	border-top: 0.4px;
-	height: 100vh;
+	height: 20vh;
 	
-}
-.principal {
-	border-top: 0.4px solid #000;
-	color:black;
 }
 nav{
 	display: flex;
@@ -31,30 +30,32 @@ nav{
 	padding-left: 8%;
 	padding-right: 8%;
 }
+
 .logo{
 	color: black;
 	font-size: 35px;
 	letter-spacing: 1px;
 	cursor: pointer;
 }
-span{
-	color: white;
-}
+
 nav ul li{
 	list-style-type: none;
 	display: inline-block;
 	padding: 10px  25px;
 }
+
 nav ul li a{
 	color: #8d0606;
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
 }
+
 nav ul li a:hover{
 	color: #ce0243;
 	transition: .4s;
 }
+
 .btn{
 	background-color:#25D366;
 	color: white;
@@ -70,29 +71,90 @@ nav ul li a:hover{
 
 }
 
-
+/*----------------principal*---------*/
+.principal {
+	height: 80vh;
+	border-top: 0.4px transparent #000;	
+	background: linear-gradient(#FFFFFF, #D7E1EC);
+}
 
 .content{
+	padding-top: 15px;
 	position: absolute;
 	top: 50%;
 	left:8%;
 	transform: translateY(-50%);
 }
-h1{
+.content h1{
 	color: black;
 	margin: 20px 0px 20px;
-	font-size: 75px;
+	font-size: 130px;
+    text-align: center;
+    padding-top: 60px;
+	position: relative;
+	left: 10%;
+
 }
-h3{
+
+.sub {
 	color: black;
-	font-size: 25px;
-	margin-bottom: 50px;
+	font-size: 70px;
+    text-align: center;
+    padding-bottom: 75px;
+	position: relative;
+	left: 10%;
+
+}
+
+.content h3{
+	color: black;
+	font-size: 40px;
+    text-align: center;
+    padding-bottom: 75px;
+	position: relative;
+	left: 10%;
+}
+
+.wpp {
+	color: #25D366;
+	font-weight: 400;
+	font-size: 40px;
+    text-align: center;
+    padding-bottom: 15;
+}
+
+span {
+    color: #000;
 }
 h4{
 	color: black;
 	letter-spacing: 2px;
 	font-size: 20px;
+    text-align: center;
 }
+
+
+.btn2{
+	background-color:#25D366;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 30px 120px;
+	border-radius: 30px;
+	transition: transform .4s;
+	position: relative;
+	left: 45%;
+
+	
+}
+.btn2:hover{
+	transform: scale(1.2);
+
+}
+
+
+
 .newslatter form{
 	width: 380px;
 	max-width: 100%;
@@ -120,72 +182,54 @@ h4{
 	right: 6px; 
 }
 
-/*Sobre o escritório*/
-.about{
+/*-------- saber mais----------*/
+.saber {
+	border-bottom: 0,5px solid transparent;
+}
+
+.conheca__melhor{
 	width: 100%;
-	padding: 100px 0px;
-	background-color: #d3d3d3;
-}
-.about img{
-	height: auto;
-	width: 430px;
-}
-.about-text{
-	width: 550px;
-}
-.main{
-	width: 1130px;
-	max-width: 95%;
-	margin: 0 auto;
+	height: 290px;
+	background: #191919;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: center;
+	
 }
-.about-text h2{
-	color: #8d0606;
-	font-size: 75px;
-	text-transform: capitalize;
-	margin-bottom: 20px;
-}
-.about-text h5{
+.conheca__melhor p{
 	color: white;
-	letter-spacing: 2px;
-	font-size: 22px;
+	font-size: 60px;
+	font-weight: bold;
 	margin-bottom: 25px;
-	text-transform: capitalize;
 }
-.about-text p{
-	color: white;
-	letter-spacing: 1px;
-	line-height: 28px;
-	font-size: 18px;
-	margin-bottom: 45px;
-}
-button{
+.conheca__melhor .button-two{
 	background-color:#25D366;
 	color: white;
 	text-decoration: none;
-	border: 2px solid transparent;
+	border: 5px solid transparent;
 	font-weight: bold;
-	padding: 13px 30px;
+	padding: 25px 30px;
 	border-radius: 30px;
-	transition: .4s; 
+	transition: .4s;
+	font-size: 30px;
 }
-button:hover{
+.conheca__melhor .button-two:hover{
 	background-color: transparent;
 	border: 2px solid #25D366;
 	cursor: pointer;
 }
 
-/*------------------------ serviços ------------------*/
+/*---------servicos------------------*/
 
-.service{
+
+.servicos{
 	background: #d3d3d3;
 	width: 100%;
 	padding: 100px 0px;
 }
-.title h2{
-	color: #191919;
+.titulo h2{
+	color: #8d0606;
 	font-size: 75px;
 	width: 1130px;
 	margin: 30px auto;
@@ -195,32 +239,51 @@ button:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 400px;
+	min-height: 200px;
 }
+
+
 .card{
-	height: 365px;
+	height: 205px;
 	width: 335px;
 	padding: 20px 35px;
-	background: #191919;
+	background: #333;
 	border-radius: 20px;
 	margin: 15px;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
 }
-.card i{
-	font-size: 45px;
-	display: block;
-	text-align: center;
-	margin: 26px 0px;
-	color: #e9054dd5;
 
-}
 h5{
+	margin-top: 15px;
 	color: white;
-	font-size: 23px;
-	margin-bottom: 15px;
+	font-size: 35px;
+	margin-bottom: 10px;
 }
+
+.card__1 {
+	margin-top: 30px;
+}
+
+.card__2 {
+	margin-top: 30px;
+}
+.card__3{
+    margin-top: 30px;
+	color: white;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+.card__4 {
+	margin-top: 30px;
+}
+
+.card__5 {
+	margin-top: 30px;
+}
+
 .pra p{
 	color: white;
 	font-size: 16px;
@@ -243,18 +306,90 @@ h5{
 	cursor: pointer;
 }
 
+/*--------------Nossos serviços -------- SESSÃO */
+
+.mais__informacoes {
+border-top: 0.4px;
+	
+}
+
+.mais__informacoes h2 {
+	padding-top: 30px;
+	color:#8d0606;
+	font-size: 45px;
+
+
+}
+
+.mais__informacoes h5 {
+	color:black;
+	padding: 10px;
+	font-size: 30px;
+
+}
+
+.produtos {
+	margin-top: 15px;
+}
+
+.icones{
+	display: flex;
+	flex-direction:row-reverse;
+	font-size: 100px;
+	color:#8d0606;
+	
+}
+
+/*----------conheca melhor ---------*/	
+.conheca {
+	padding-top: 45px;
+}
+
+.conheca__melhor{
+	width: 100%;
+	height: 290px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.conheca__melhor p{
+	color: white;
+	font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.conheca__melhor .button-two{
+	background-color:#25D366;
+	color: white;
+	text-decoration: none;
+	border: 5px solid transparent;
+	font-weight: bold;
+	padding: 25px 30px;
+	border-radius: 30px;
+	transition: .4s;
+	font-size: 30px;
+}
+.conheca__melhor .button-two:hover{
+	background-color: transparent;
+	border: 2px solid #25D366;
+	cursor: pointer;
+}
+
 /*---------------------------- quem somos ------------------*/
 .quem-somos__descricao {
-    color: #595959;
-    font-size: 1.75rem;
-    font-weight: 100;
+    color: #2b2a2a;
+    font-size: 1.8rem;
+    font-weight: 25;
 	font-family: 'Josefin Sans', sans-serif;;
 }
 
 .quem-somos__titulo {
-    color: #8d0606;
+    color: #8f0707;
     font-size: 3.1875rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0,5rem;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -262,6 +397,7 @@ h5{
     padding: 5rem;
     text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .pessoas {
@@ -281,58 +417,51 @@ h5{
     width: 300px;
 }
 
-.pessoa__imagem--roberta {
-    background-image: url('../chefe.jpg');
+.pessoa__imagem--frederico {
+    background-image: url('../Criminal-completa/chefe.jpg');
 }
 
-.pessoa__imagem--marcela {
-    background-image: url('../carol.jpg');
+.pessoa__imagem--carol {
+    background-image: url('../Criminal-completa/carol.1.jpg');
 }
 
-
-@media screen and (min-width: 0) {
-    .pessoas {
-        flex-direction: column;
-    }
+.pessoa__nome {
+    color: #8d0606;
+    font-size: 45px;
 }
-@media screen and (min-width: 768px) {
-    .pessoas {
-        flex-direction: row;
-    }
-}
-
 
 /*---------------contato ---------------*/
-.contact-me{
+.contato{
 	width: 100%;
-	height: 290px;
+	height: 260px;
 	background: #191919;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 }
-.contact-me p{
+.contato p{
 	color: white;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: bold;
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 }
-.contact-me .button-two{
+.contato .button-two{
 	background-color:#25D366;
 	color: white;
 	text-decoration: none;
 	border: 2px solid transparent;
 	font-weight: bold;
-	padding: 13px 30px;
+	padding: 30px 40px;
 	border-radius: 30px;
 	transition: .4s; 
 }
-.contact-me .button-two:hover{
+.contato .button-two:hover{
 	background-color: transparent;
 	border: 2px solid #25D366;
 	cursor: pointer;
 }
+
 
 /*--------------mapa----------*/
 
@@ -359,6 +488,58 @@ h5{
 }
 
 
+
+/*-----------------final----------------------- */
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  black;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+
+.end{
+	position: absolute;
+	color:white;
+	bottom: 35px;
+	font-size: 14px; 
+}
 
 /*-----------------final----------------------- */
 footer{
