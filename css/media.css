@@ -1,0 +1,62 @@
+
+/*---------cabecalho------------*/
+@media screen and (max-width: 768px) {
+    
+}
+/*---principal-------*/
+/*--------saber mais--------*/
+/*---Servicos------*/
+
+
+/*-------NOSSOS SERVICOS------*/
+
+@media screen and (max-width: 768px) {
+    .mais__informacoes {
+        padding: 5rem 0 0 2.5rem;
+    }
+}
+
+/*------nos conheça melhor-------------*/
+
+/*---QUEM SOMOS-----*/
+@media screen and (min-width: 0) {
+    .pessoas {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) {
+    .pessoas {
+        flex-direction: row;
+    }
+}
+
+/*-------------local----------*/
+
+@media screen and (min-width: 0) {
+    .mapa {
+        flex-direction: column;
+        width:auto;
+    }
+    
+     
+}
+@media screen and (min-width: 768px) {
+          
+}
+@media screen and (max-width: 768px) {
+    .mapa-conteudo{
+        width: auto;
+    }
+    }
+
+/*---------footer--------*/
+@media screen and (min-width: 0) {
+    .footer {
+        width: auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        width: auto;
+    }
+}
